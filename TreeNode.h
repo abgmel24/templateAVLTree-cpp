@@ -12,6 +12,9 @@ class TreeNode {
             delete left;
             delete right;
         }
+        bool isLeafNode() {
+            return (left == NULL) && (right == NULL);
+        }
 
         T key;
         TreeNode<T> *left;
